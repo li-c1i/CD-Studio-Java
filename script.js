@@ -21,8 +21,6 @@ function resizePage() {
 
     const scaleX = viewportWidth / designWidth;
     const scaleY = viewportHeight / designHeight;
-
-    // Use the smaller scale so the whole design always fits
     const scale = Math.min(scaleX, scaleY);
 
     page.style.transform = `
